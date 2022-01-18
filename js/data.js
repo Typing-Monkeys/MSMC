@@ -62,8 +62,8 @@ function printImages(contents) {
         html += "<div class='row'>"
         html += "<div class='col-md-12'>"
         html += "<h3>" + element.name + "</h3>"
-        html += "</div>"
-        html += "</div>"
+        //html += "</div>"
+        //html += "</div>"
 
         console.log(element.name);
 
@@ -73,9 +73,11 @@ function printImages(contents) {
             html += "<a href='" + element.path + "'>"
             html += "<img src='" + element.path + "' class='img-thumbnail'>"
             html += "</a>"
-            //html += "</div>"
-            //html += "</div>"
+            
         });
+
+        html += "</div>"
+        html += "</div>"
     });
 
     //console.log(html);
